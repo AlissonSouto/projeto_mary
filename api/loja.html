@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="imagens/compras.ico" type="image/x-icon">
+    <title>Loja Virtual</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css">
+</head>
+<body onload="start()">        
+  
+<div id="interface">
+
+    <header id="cabecalho">
+
+        <div class="cabecalho-top">
+            <div class="largura-conteiner-top">
+                <div class="cabecalho-top-esquerda">
+                    <div class="social-links">  
+                        <ul>
+                            <li><a href="" ><img src="imagens/icone-facebook.png"></a></li>
+                            <li><a href="" ><img src="imagens/icone-instagram.png"></a></li>
+                            <li><a href="" ><img src="imagens/icone-twitter.png"></a></li>
+                            <li><a href="" ><img src="imagens/icone-whatsapp.png"></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="cabecalho-top-direita">
+                    <div class="boas-vindas-msg"><b>Quer ser diferente também?  Vem pra Empório meu bem!</b></div>       </div>
+            </div>
+        </div>
+
+        <div class="cabecalho">
+                <div class="largura-conteiner-cabecalho">
+                    <div class="cabecalho-left">
+                        <h1 class="logo"><strong>Shopping Empório</strong><a href="index.html" title="I - Help" class="logo"><img src="imagens/logo-sf.png" alt="Shopping Empório"></a></h1>
+                    </div> 
+                </div>
+
+                <form class="buscar" method="post" action="loja.html">
+                    <div id="divBusca">
+                        <input type="text" id="txtBusca" list="historico" placeholder="O que você está procurando?" value="" maxlength="128" />
+                        <button id="btnBusca"><img src="imagens/buscar.png" alt="buscar..." width="30" height="30"></button>
+                    </div>
+                    <datalist id="historico">
+                        <option value = "Camisa nike"></option>
+                        <option value = "blusa feminina"></option>
+                    </datalist>
+                </form>
+                <div id="conta-loja">           
+                    <button class="btnConta"><a href="login.html"><img src="imagens/usuario.png" alt=""> Conta </a></button> 
+                    <button class="btnCarrinho"><a href=""><img src="imagens/carrinho.png" alt=""> Carrinho </a></button>  
+                </div> 
+        </div>
+
+        <div class="cabecalho-bottom">
+            <nav class="menu">
+                <h1>Categorias <img src=""></h1>
+                <ul>
+                    <li class="li-linha"><a class="funcional" href="index.html" target="_self">Início</a></li>               
+                    <li class="li-linha"><a class="funcional" href="sobre-a-empresa.html" target="_self">Sobre a Empresa</a></li> 
+                    <li class="li-linha3"><a class="funcional" href="fale-conosco.html" target="_self">Fale Conosco</a></li> 
+                </ul>
+            </nav>
+        </div>
+    
+    </header>
+      <div class="menu-loja">	
+    	  <h2>Loja Virtual</h2>
+      </div>	  
+
+    <section class="inicio">
+        <div class="conteiner-main">
+            <div class="conteiner">
+                <div class="orientacao-main">
+                    <div class="orientacao">
+                        <ul>
+                            <li class="categoria"><strong></strong></li>
+                        </ul>
+                    </div>
+                </div> 
+
+                <aside class="categorias">
+                    <ul>
+                        <li  class="li1"><h5>Marcas</h5><ul>
+                            <a href=""><li>Nike</li></a>
+                            <a href=""><li>Adidas</li></a>
+                            <a href=""><li>Lacoste</li></a>
+                            <a href=""><li>Tommy Hilfiger</li></a>
+                            <a href=""><li>John John</li></a>
+                            <a href=""><li>Calvin Klein</li></a>
+                            <a href=""><li>Prada</li></a>
+                            <a href=""><li>Versace</li></a>
+                            <a href=""><li>Saint Laurent</li></a>
+                            <a href=""><li>Gucci</li></a>
+                            <a href=""><li>Louis Vuitton</li></a>
+                            <a href=""><li>Dolce & Gabbana</li></a>
+                            <a href=""><li>Balenciaga</li></a>
+                            <a href=""><li>Zara</li></a>
+                            <a href=""><li>Puma</li></a>
+                        </ul></li>
+                </aside>
+                
+                <article class="produtos">
+                        
+                        <ul id="conteiner" class="produtos-conteiner">
+                            
+                                <li>
+                                    <div class="produto">
+                                        <a href="compra.php?p=produto1&n=Camisetas básicas&pr=R$80,90#conteiner" title="Camiseta" class="imagem-produto" target="_blank">
+                                            <img src="imagens/produtos/produto1.jpg" alt="Camiseta 1"></a>
+
+                                        <h2 class="nome-produto"><a href="" title="Camiseta 1">Camisetas básicas</a></h2> 
+                                            
+                                        <div class="caixa-preco">
+                                            <span id="produto-preco"><span class="preco">R$80,90</span>          
+                                        </div>
+                                    </div>
+                                </li>
+    
+                                <li>
+                                    <div class="produto">
+                                        <a href="compra.php?p=produto7&n=Camiseta Adidas&pr=R$95,00#conteiner" title="" class="imagem-produto" target="_blank">
+                                            <img src="imagens/produtos/produto7.jpg" alt="Camiseta 2"></a>
+
+                                        <h2 class="nome-produto"><a href="" title="Camiseta 2">Camiseta Adidas</a></h2> 
+                                                
+                                        <div class="caixa-preco">
+                                            <span id="produto-preco"><span class="preco">R$95,00</span>       
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="produto">
+                                        <a href="compra.php?p=produto8&n=Camisa Infantil&pr=R$65,90#conteiner" title="Camiseta" class="imagem-produto" target="_blank">
+                                            <img src="imagens/produtos/produto8.jpg" alt="Camiseta"></a>
+
+                                        <h2 class="nome-produto"><a href="" title="Camiseta">Camisa Infantil</a></h2> 
+                                                
+                                        <div class="caixa-preco">
+                                            <span id="produto-preco"><span class="preco">R$65,90</span>       
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            
+                            
+                            
+                            <ul id="conteiner" class="produtos-conteiner">
+                            
+                                <li>
+                                    <div class="produto">
+                                        <a href="compra.php?p=produto9&n=Cropped Feminino&pr=R$84,90#conteiner" title="Camiseta" class="imagem-produto" target="_blank">
+                                            <img src="imagens/produtos/produto9.jpg" alt="Camiseta"></a>
+
+                                        <h2 class="nome-produto"><a href="" title="Camiseta">Cropped Feminino</a></h2> 
+                                            
+                                        <div class="caixa-preco">
+                                            <span id="produto-preco"><span class="preco">R$84,90</span>          
+                                        </div>
+                                    </div>
+                                </li>
+    
+                                <li>
+                                    <div class="produto">
+                                        <a href="compra.php?p=produto4&n=Camisa masculina&pr=R$69,90#conteiner" title="Camiseta" class="imagem-produto" target="_blank">
+                                            <img src="imagens/produtos/produto4.jpg" alt="Camiseta"></a>
+
+                                        <h2 class="nome-produto"><a href="" title="Camiseta">Camisa masculina</a></h2> 
+                                                
+                                        <div class="caixa-preco">
+                                            <span id="produto-preco"><span class="preco">R$69,90</span>       
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="produto">
+                                        <a href="compra.php?p=produto6&n=Blusa estampada&pr=R$39,90#conteiner" title="Camiseta" class="imagem-produto" target="_blank">
+                                            <img src="imagens/produtos/produto6.jpg" alt="Camiseta"></a>
+
+                                        <h2 class="nome-produto"><a href="" title="Camiseta">Blusa estampada</a></h2> 
+                                                
+                                        <div class="caixa-preco">
+                                            <span id="produto-preco"><span class="preco">R$39,90</span>       
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+    
+                    </article>
+
+            </div>
+        </div>
+    </section>
+   <hr>              
+                
+    <footer class="rodape">
+        <div class="rodape-conteiner">
+            <div class="rodape">
+                <address>&copy; by Shopping Empório<br>CNPJ xx.xxx.xxx/xxx-xx - Todos os direitos reservados.<br>
+                </address> 
+            </div>
+            <div class="titulo-sociais-links">
+                <h3>Nos siga nas Redes Sociais!</h3>
+            </div>
+            <div class="sociais-links">
+                <ul>
+                    <li><a href="" target="_blank"> <img src="imagens/icone-facebook-G.png"></a></li>
+                    <li><a href="" target="_blank"> <img src="imagens/icone-youtube-G.png"></a></li>
+                    <li><a href="" target="_blank"> <img src="imagens/icone-twitter-G.png"></a></li>
+                    <li><a href="" target="_blank"> <img src="imagens/icone-instagram-G.png"></a></li>
+                <ul>
+            </div>
+        </div>
+     
+    </footer>
+
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
