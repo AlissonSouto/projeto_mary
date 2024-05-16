@@ -1,3 +1,24 @@
+function CriaRequest() {
+  try{
+      request = new XMLHttpRequest();
+  }catch (IEAtual){
+      try{
+          request = new ActiveXObject("Msxml2.XMLHTTP");
+      }catch(IEAntigo){
+          try{
+              request = new ActiveXObject("Microsoft.XMLHTTP");
+          }catch(falha){
+              request = false;
+          }
+      }
+  }
+  if (!request)
+      alert("Seu Navegador não suporta Ajax!");
+  else
+      return request;
+}
+
+
 //ajuste do tamanho da div no formulário Login/Cadastro
 
 var altura = document.querySelector('.content')
@@ -130,4 +151,34 @@ function Logar(){
     return false;
   }
   alert("Bem vindo ",nome_logar)
+}
+
+
+
+
+function consultaCEP(){
+  var src = document.getElementById("cep").value;
+  src = src.replace("-", "");
+
+  xmlreq = CriaRequest();
+
+  xmlreq.open("GET", "https://viacep.com.br/ws/"+ src +"/xml/", true);
+
+  xmlreq.onreadystatechange = function(){
+      if (xmlreq.readyState == 4){
+          if (xmlreq.status == 200){
+              parser = new DOMParser();
+              info = xmlreq.responseText;
+              info = parser.parseFromString(info,"text/xml");
+              console.log(info);
+              var xml = info.getElementsByTagName("xmlcep");
+              console.log(xml.length);
+
+              document.getElementById("uf").value = xml[0].getElementsByTagName("uf")[0].childNodes[0].nodeValue;
+              document.getElementById("cidade").value = xml[0].getElementsByTagName("localidade")[0].childNodes[0].nodeValue;
+              document.getElementById("bairro").value = xml[0].getElementsByTagName("bairro")[0].childNodes[0].nodeValue;
+          }
+      }
+  };
+  xmlreq.send(null);
 }

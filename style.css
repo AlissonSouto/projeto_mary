@@ -36,7 +36,8 @@ header#cabecalho{
     padding: 40px 0;
     display: inline-block;
     width: 100%;
-    background-image: linear-gradient(#F0F0F0 0%, #FFFFFF 100%);
+    /* background-image: linear-gradient(#F0F0F0 0%, #FFFFFF 100%); */
+    background-image: linear-gradient(#214095 63%, #ffffff 100%);
 }
 div.largura-conteiner-cabecalho{
     width: 1000;
@@ -79,7 +80,7 @@ div.cabecalho-top{
     background: #ffffff;
 }
 div.largura-conteiner-top{
-    width: 800px;
+    width: 1000px;
     background: transparent;
 }
 div.cabecalho-top-esquerda{
@@ -229,7 +230,7 @@ div.categoria-titulo h1{
 aside.categorias{
     float: left; 
     width: 260px; 
-    height: 560px;
+    height: 750px;
     background-color: #f0f0f0;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
     margin: 31px 15px 0px 0px; 
@@ -272,6 +273,7 @@ aside.categorias li.li1 h5{
     border: 1px solid #999;
     border-radius: 10px;    
     width: 280px;
+    max-height: 305px;
 }
 .imagem-produto img:hover{
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
@@ -510,20 +512,22 @@ div.beneficios h3{
 }
 
 div.menu-loja h2{
-	background-color:#F0E68C;
+	/* background-color:#214095; */
 	text-align:center;
 	font-size:60px;
+    color: #214095;
 }
 
 div.sobre h1{
 	text-align:center;
 	font-size:50px;
+    color: #214095;
 }
 
 div.sobre{
 	margin: auto;
 	width: 900px;
-	background-color: #F0E68C;
+	background-color: #ebebeb;
 	border:solid 1px;
 	border-radius: 0px 20px 0px 20px;
 	text-align:center;
@@ -531,7 +535,7 @@ div.sobre{
 
 div.exclusivo{
 	margin: auto;
-	background-color: #F0E68C;
+	background-color: #ebebeb;
 	border:solid 1px;
 	border-radius: 0px 20px 0px 20px;
 }
@@ -550,10 +554,8 @@ div.exclusivo h2{
 div.texto-faleconosco{
 	margin: auto;
 	width: 900px;
-	background-color: #F0E68C;
-	border:solid 1px;
-	border-radius: 0px 20px 0px 20px;
 	text-align:center;
+    color: #214095;
 }
 
 div.texto-faleconosco h3{
