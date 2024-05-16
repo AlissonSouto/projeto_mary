@@ -1,2 +1,0 @@
-# AlissonSouto
-# suporteihelp
